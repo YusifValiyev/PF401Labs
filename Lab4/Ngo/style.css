@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto";
+}
+
+.container {
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.navbar-container .navbar .left-side {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.navbar-container .navbar .left-side h4 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar-container .navbar .left-side .text-i {
+    font-family: "Courgette";
+}
+
+.navbar-container .navbar .middle-side {
+    display: flex;
+    list-style: none;
+    column-gap: 40px;
+}
+
+.navbar-container .navbar .middle-side li>a {
+    text-decoration: none;
+    color: #525560;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar-container .navbar .donate-btn {
+    background-color: black;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 4px;
+    font-family: "Roboto";
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500px;
+    transition: .3s;
+
+}
+
+.navbar-container .navbar .donate-btn:hover {
+    background-color: transparent;
+    color: black;
+}
+
+/* Image section */
+
+.image-section {
+    background: url(./assets/images/bgimgjpeg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 128px;
+    padding-bottom: 100px;
+}
+
+.image-section .image-heading {
+    color: white;
+    font-size: 64px;
+    font-weight: 700;
+    width: 50%;
+}
+
+.image-section .buttons-container {
+    display: flex;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.image-section .what-btn {
+    padding: 16px 32px;
+    border-radius: 4px;
+    background: #FFF;
+    border: none;
+    font-family: "Roboto";
+    cursor: pointer;
+
+}
+
+.image-section .play-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 16px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    gap: 8px;
+    font-family: "Roboto";
+    cursor: pointer;
+}

@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(./assets/fonts/Poppins-Regular.ttf) format("TrueType");
+    font-weight: 400;
+}
+
+html {
+    font-family: "Poppins";
+}
+
+.container {
+    width: 1280px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0 auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    align-items: center;
+}
+
+header nav .middle-side {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+header nav .middle-side .navbar-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header nav .middle-side .navbar-links>a {
+    text-decoration: none;
+    color: black;
+}
+
+
+header nav .middle-side .navbar-links .submenu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 0px 30px -1px rgba(179, 179, 179, 1);
+    width: 150px;
+}
+
+header nav .middle-side .navbar-links .submenu.submenu1 {
+    left: 0;
+    top: 100%;
+}
+
+header nav .middle-side .navbar-links .submenu>li {
+    position: relative;
+}
+
+header nav .middle-side .navbar-links .submenu>li>a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .1s;
+}
+
+
+header nav .middle-side .navbar-links .submenu>li>a:hover {
+    background-color: rgb(67, 126, 247);
+    color: white;
+}
+
+header nav .middle-side .navbar-links .submenu>li>.submenu.submenu2 {
+    left: 100%;
+    top: 0;
+}
+
+header nav .middle-side .navbar-links:hover .submenu1 {
+    display: initial;
+}
+
+header nav .middle-side .navbar-links .submenu>li:hover .submenu2 {
+    display: initial;
+}
+
+
+header nav .buttons .btn1 {
+    background-color: transparent;
+    border: 2px solid rgb(67, 126, 247);
+    padding: 12px 15px;
+    font-family: "Poppins";
+    color: rgb(67, 126, 247);
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+header nav .buttons .btn2 {
+    padding: 12px 15px;
+    background-color: rgb(67, 126, 247);
+    color: white;
+    border: 2px solid transparent;
+    font-family: "Poppins";
+    cursor: pointer;
+    border-radius: 5px;
+}
