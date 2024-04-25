@@ -1,0 +1,18 @@
+1. Verilmis 2 ededden boyuk olani tapan bir function yazin => findBigger(3,4) => 4
+
+2. Arrayin elementlerinin cemini ekrana cixardan function yazin =>sumOfArray([1,2,3])=>6
+
+3. Daxil edilmis arrayda en boyuk elementi tapan function yazin => findBiggest([3,1,2,7,4])=>4
+
+4. Verilmis ededin sade eded olub olmamagini yoxlayin =>isPrime(5)=>true isPrime(12)=>false
+
+5. Fibonacci sirasinin ilk 10 heddini ekrana yazdirin. 0 1 1 2 3 5 8 13 21 34 
+    ilk 2 hedd evvelden verilir
+
+5.1 Verilmis hedde qeder sirani bir arraya yigin ve en sonda arrayi ekrana yazdirin
+
+6. Bir array ve bir number qebul eden function yazin eger arrayda cemi hemin edede beraber olan elementler varsa onlari bir arraya yigin=>
+    [1,2,3,4,5,6] number = 7 [[1,6],[2,5],[3,4]] sizde [5,2] [6,1] ilk basda cixa biler bunu yazdiqdan sonra onlari cixarmiyacaq sekilde kodu duzeldin 
+    
+7. Default email ve password saxlayin (admin@gmail.com, admin) daxil edilen email ve passwordu yoxluyan
+    function yazin
