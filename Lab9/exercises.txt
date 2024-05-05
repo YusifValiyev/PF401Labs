@@ -1,0 +1,2 @@
+1.Bir car obyekti yaradin ve icerisinde id,brand,color,isRented propertileri olsun, ve 2 method olsunki cari rent elesin ve rentden cixarsin
+2.

@@ -64,21 +64,21 @@
 
 // Task 5
 
-function reverseString(myString, reverseWord) {
-    let wordsArray = myString.split(" ");
-    let reversedArray = [];
-    for (let str of wordsArray) {
-        reversedArray.push(reverseWord(str));
-    }
-    console.log(reversedArray.join(" "));
-}
+// function reverseString(myString, reverseWord) {
+//     let wordsArray = myString.split(" ");
+//     let reversedArray = [];
+//     for (let str of wordsArray) {
+//         reversedArray.push(reverseWord(str));
+//     }
+//     console.log(reversedArray.join(" "));
+// }
 
-function reverseWord(str) {
-    let reversedStr = "";
-    for (let i = str.length - 1; i >= 0; i--) {
-        reversedStr += str[i];
-    }
-    return reversedStr;
-}
+// function reverseWord(str) {
+//     let reversedStr = "";
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         reversedStr += str[i];
+//     }
+//     return reversedStr;
+// }
 
-reverseString("hello world", reverse);
+// reverseString("hello world", reverse);
