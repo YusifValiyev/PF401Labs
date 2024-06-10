@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins";
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("./assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.weather-container {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 40px 25px;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-container form.weather-search-container {
+  width: 100%;
+  position: relative;
+}
+
+.weather-container form.weather-search-container #search-input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px 45px;
+  outline: none;
+  color: white;
+  font-family: inherit;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+
+.weather-container form.weather-search-container .fa-location-dot {
+  position: absolute;
+  color: white;
+  left: 15px;
+  font-size: 1.5rem;
+  top: 15px;
+  cursor: pointer;
+}
+
+.weather-container form.weather-search-container .fa-magnifying-glass {
+  position: absolute;
+  color: white;
+  font-size: 1.5rem;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.weather-container .weather-main-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-top: 30px;
+  /* display: none; */
+}
+
+.weather-container.error .weather-main-section {
+  display: none;
+}
+
+.weather-container .weather-main-section img {
+  width: 60%;
+}
+
+.weather-container .weather-main-section .temperature {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.weather-container .weather-main-section .temperature span {
+  font-size: 1rem;
+  position: absolute;
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+.weather-container .weather-main-section .temperature .description {
+  text-transform: capitalize;
+}
+
+.weather-container .weather-footer {
+  width: 100%;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.weather-container.error .weather-footer {
+  display: none;
+}
+
+.weather-container .humidity-wind {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.weather-container .humidity-wind i {
+  font-size: 2.3rem;
+}
+
+.active {
+  height: 100%;
+}
+
+.weather-container .not-found {
+  display: none;
+}
+
+.weather-container.error .not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-size: 1.1rem;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.weather-container.error .not-found img {
+  width: 60%;
+}
